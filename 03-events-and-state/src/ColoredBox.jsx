@@ -1,16 +1,25 @@
 import { useState } from 'react'
 
 export default function ColoredBox() {
+    const [color, setColor] = useState("red");
+
+    function redBox(){
+        setColor("red");
+    }
+    function greenBox(){
+        setColor("green");
+    }
+
     return (
         <>
-            <div style={{
+            <div id="box" style={{
                 margin:"10px",
-                backgroundColor: "white",
+                backgroundColor: color,
                 border: "2px solid black",
                 height: "50px",
                 width: "50px"
             }} />
-            <button>Red</button><button>Green</button>
+            <button onClick={redBox}>Red</button><button onClick={greenBox}>Green</button>
         </>
     )
 }

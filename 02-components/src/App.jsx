@@ -2,7 +2,10 @@ import React from 'react';
 import apples from "./assets/apples.jpg";
 import "./App.css";
 
-// Create a component that display an image
+
+export default function App() {
+
+  // Create a component that display an image
 // and has a border around it
 function BorderImageFrame() {
   return (
@@ -60,7 +63,7 @@ function sayHappyNewYear() {
   return <h3>Happy New Year</h3>
 }
 
-export default function App() {
+
   return (
     <>
     <h1>Hello World</h1>
